@@ -9,7 +9,7 @@ fun main() {
         when (readLine()) {
             START_COMMAND_1, START_COMMAND_2 -> if (!startBlock()) return
             END_COMMAND_1, END_COMMAND_2 -> if (!endBlock()) return
-            else -> println("Не правильная команда для начала работы")
+            else -> println("Неправильная команда для начала работы")
         }
     }
 }
@@ -29,7 +29,7 @@ private fun startBlock(): Boolean {
             )
             END_COMMAND_1, END_COMMAND_2 -> if (!endBlock()) return false
             START_COMMAND_1, START_COMMAND_2 -> println("Программа уже запущена")
-            else -> println("Введена не правильная команда, введите '$HELP_COMMAND_1' для того чтобы продолжить работу или '$END_COMMAND_1' чтобы завершить работу")
+            else -> println("Введена неправильная команда, введите '$HELP_COMMAND_1' для того чтобы продолжить работу или '$END_COMMAND_1' чтобы завершить работу")
 
         }
     }
